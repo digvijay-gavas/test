@@ -1,26 +1,40 @@
 package com.mycompany.app;
 
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
 /**
- * Hello world!
- *
+ * Unit test for simple App.
  */
-public class App 
+public class AppTest 
+    extends TestCase
 {
-    public static void main(String[] args) {
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public AppTest( String testName )
+    {
+        super( testName );
+    }
 
-		System.out.println(getHelloWorld());
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
+    }
 
-	}
-
-	public static String getHelloWorld() {
-
-		return "Hello World";
-
-	}
-
-	public static String getHelloWorld2() {
-
-		return "Hello World 2";
-
-	}
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+    	
+    	assertEquals(App.getHelloWorld(), "Hello World");
+ 
+    }
 }
