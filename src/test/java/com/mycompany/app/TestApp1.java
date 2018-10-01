@@ -1,7 +1,8 @@
 package com.mycompany.app;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 public class TestApp1 {
 
