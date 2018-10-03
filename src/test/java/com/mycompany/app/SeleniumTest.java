@@ -35,7 +35,7 @@ public class SeleniumTest extends TestCase {
 		
 		
 		  _driver = new InternetExplorerDriver(capabilities);
-		  _driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		  _driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
  
 		
  		
