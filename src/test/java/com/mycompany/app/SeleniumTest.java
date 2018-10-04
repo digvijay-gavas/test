@@ -64,10 +64,15 @@ public class SeleniumTest extends TestCase {
  	@Test
 	public void testApp()
     {
-		_driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
  		
- 		_driver.get("https://www.google.co.in/");
- 		//waitForPageLoadComplete(_driver, 10);
+ 		_driver.get("https://www.google.co.in/");_driver.get("https://www.google.co.in/");
+ 		try {
+			System.out.println("---2 sec delay "+ driver.getCurrentUrl());
+			_driver.manage().timeouts().wait(2000);
+			System.out.println("---2 sec delay finished ");
+		} catch (InterruptedException e) {
+		}
+ 		waitForPageLoadComplete(_driver, 10);
 		
  				
  		assertEquals("Google", _driver.getTitle());
