@@ -68,7 +68,7 @@ public class SeleniumTest extends TestCase {
  		_driver.get("https://www.google.co.in/");_driver.get("https://www.google.co.in/");
  		try {
 			System.out.println("---2 sec delay "+ _driver.getCurrentUrl());
-			_driver.manage().timeouts().wait(2000);
+			Thread.sleep(2000);
 			System.out.println("---2 sec delay finished ");
 		} catch (InterruptedException e) {
 		}
