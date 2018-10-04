@@ -66,7 +66,8 @@ public class SeleniumTest extends TestCase {
     {
  		
  		_driver.get("https://www.google.co.in/");
- 		waitForPageLoadComplete(_driver, 10);
+ 		//waitForPageLoadComplete(_driver, 10);
+		_driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
  				
  		assertEquals("Google", _driver.getTitle());
  		
