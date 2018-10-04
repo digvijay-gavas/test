@@ -27,7 +27,7 @@ public class SeleniumTest extends TestCase {
  	protected void setUp() throws Exception {
  		// TODO Auto-generated method stub
  		
- 		String service = "D:\\knowlege_sharing\\tools\\IEDriverServer.exe";
+ 		String service = "C:\\Knowlege_sharing_sessions\\tools\\IEDriverServer.exe";
 		System.setProperty("webdriver.ie.driver", service);
 		
 		
